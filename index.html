@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<h1>⌨ Typing Speed Test</h1>
+
+<div id="sentence">
+    JavaScript is a powerful language for web development
+</div>
+
+<button onclick="startTest()">START</button><br><br>
+
+<textarea id="input" placeholder="Click START to begin typing..."
+          disabled
+          onkeydown="checkEnter(event)"></textarea>
+
+<div id="result"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
